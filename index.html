@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ArtVsMark — инструменты для изучения Python</title>
+<meta name="description" content="Открытые инструменты для изучения Python: двуязычный глоссарий стандартной библиотеки и система автопроверки решений.">
+<meta name="yandex-verification" content="8da5872e5d489b96">
+<link rel="canonical" href="https://artvsmark.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ArtVsMark">
+<meta property="og:description" content="Открытые инструменты для изучения Python: двуязычный глоссарий стандартной библиотеки и система автопроверки решений.">
+<meta property="og:url" content="https://artvsmark.github.io/">
+<style>
+:root{
+  --bg:#f4f2ec; --surface:#fff; --border:#e6e2d8;
+  --text:#161b26; --muted:#666e7d;
+  --accent:#2f54eb; --accent-soft:#e9edfd;
+  --shadow:0 1px 2px rgba(22,27,38,.05), 0 3px 12px rgba(22,27,38,.05);
+  --radius:15px;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#0d1220; --surface:#151c2c; --border:#273148;
+    --text:#e7ebf3; --muted:#95a1b6;
+    --accent:#6b8cff; --accent-soft:#1b2646;
+    --shadow:0 1px 2px rgba(0,0,0,.32), 0 3px 14px rgba(0,0,0,.36);
+  }
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:var(--text);
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.55;
+}
+main{max-width:760px; margin:0 auto; padding:56px 16px 40px}
+header{display:flex; align-items:center; gap:14px; margin-bottom:28px}
+.logo{
+  width:46px; height:46px; border-radius:12px; background:var(--accent);
+  display:grid; place-items:center; flex:none;
+  color:#fff; font:700 17px/1 ui-monospace,monospace; letter-spacing:-1px;
+}
+h1{margin:0; font-size:26px}
+.lead{margin:4px 0 0; color:var(--muted)}
+.card{
+  display:block; background:var(--surface); border:1px solid var(--border);
+  border-radius:var(--radius); box-shadow:var(--shadow);
+  padding:22px 24px; margin-bottom:16px; color:inherit; text-decoration:none;
+}
+a.card:hover{border-color:var(--accent)}
+.card h2{margin:0 0 6px; font-size:19px}
+.card p{margin:0 0 12px; color:var(--muted)}
+.links{display:flex; flex-wrap:wrap; gap:8px}
+.links a{
+  font-size:14px; padding:6px 12px; border-radius:999px;
+  background:var(--accent-soft); color:var(--accent); text-decoration:none;
+}
+.links a:hover{text-decoration:underline}
+footer{margin-top:32px; color:var(--muted); font-size:14px}
+footer a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="logo" aria-hidden="true">Py</div>
+    <div>
+      <h1>ArtVsMark</h1>
+      <p class="lead">Открытые инструменты для изучения Python · Open tools for learning Python</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2>Python Glossary</h2>
+    <p>Двуязычный справочник стандартной библиотеки Python: сводка, разбор, синтаксис,
+      исполняемые примеры, версия Python и ссылка на официальную документацию.
+      Одна страница — работает и офлайн.</p>
+    <div class="links">
+      <a href="/Glossary-Python/">Открыть глоссарий</a>
+      <a href="https://github.com/ArtVsMark/Glossary-Python">Исходники на GitHub</a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Stepik Python Grader</h2>
+    <p>Автоматическая проверка решений задач по Python: тесты, вердикты, история
+      обучения. Глоссарий встроен в него базой знаний.</p>
+    <div class="links">
+      <a href="https://github.com/ArtVsMark/Stepik-Python-Grader">Исходники на GitHub</a>
+    </div>
+  </section>
+
+  <footer>
+    <a href="https://github.com/ArtVsMark">github.com/ArtVsMark</a>
+  </footer>
+</main>
+</body>
+</html>
